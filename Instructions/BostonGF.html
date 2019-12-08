@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Web HW</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">NHL Stats</a>
+      <ul class="navbar-nav navbar-right ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hockey Graphs
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="ArizonaGA.html">Arizona GA</a>
+            <a class="dropdown-item" href="ArizonaGF.html">Arizona GF</a>
+            <a class="dropdown-item" href="BostonGA.html">Boston GA</a>
+            <a class="dropdown-item" href="BostonGF.html">Boston GF</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="navselect navbar-dark bg-dark">
+      <div class="dropdown nav-item">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            NHL Stats Navigation
+        </a>
+        <ul>
+            <div class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                <li><a class="dropdown-item" href="compairson.html">Comparison</a></li>
+                <li><a class="dropdown-item" href="data.html">Data</a></li>
+                <li class="dropdown-header">Graphs:</li>
+                <li><a class="dropdown-item" href="ArizonaGA.html">Arizona GA</a></li>
+                <li><a class="dropdown-item" href="ArizonaGF.html">Arizona GF</a></li>
+                <li><a class="dropdown-item" href="BostonGA.html">Boston GA</a></li>
+                <li><a class="dropdown-item" href="BostonGF.html">Boston GF</a></li>
+            </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+               <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Boston Goals For</h5>
+                        <hr>
+                        <img src="Resources\visualizations\BOS_pW vs gs.png" alt="Boston gf" class="img-fluid">
+                        <br>
+                        <p class="card-text">This graph is showing us that when the Boston Bruins score 1 goal they have a 16% chance of winning, 2 goals they have a 43% chance of winning, before a big jump at 3 goals where they have a 56% chance of winning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Hockey Graphs</h5>
+                      <hr>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            Arizona GA:
+                            <a href="ArizonaGA.html"><img src="Resources\visualizations\ARI_pW vs ga.png" alt="Arizona ga" class="img-thumbnail"></a>
+                          </div>
+                          <div class="col-md-6">
+                              Arizona GF:
+                              <a href="ArizonaGF.html"><img src="Resources\visualizations\ARI_pW vs gs.png" alt="Arizona gs" class="img-thumbnail"></a>              
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                              Boston GA:                        
+                              <a href="BostonGA.html"><img src="Resources\visualizations\BOS_pW vs ga.png" alt="Boston ga" class="img-thumbnail"></a>
+                            </div>
+                            <div class="col-md-6">
+                                Boston GF:
+                                <a href="BostonGF.html"><img src="Resources\visualizations\BOS_pW vs gs.png" alt="Boston gs" class="img-thumbnail"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div> 
+          </div>
+        </div>    
+  </body>
+</html>
+  

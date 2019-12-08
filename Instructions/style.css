@@ -1,0 +1,48 @@
+/* Giving our navbar some padding and a background color */
+
+body {
+    background-color: #F8F8F8;
+}
+
+.navbar {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+.navselect {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: none;
+  }
+
+.navbar-brand {
+    background: #3399ff;
+    margin-left: 20px;
+  }
+
+  .img-thumbnail:hover
+  {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
+
+  @media (max-width: 576px) {
+    .navbar{
+      display: none;
+    }
+    .navselect {
+      display: block;
+    }
+  }  
+  
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+/*.navbar li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+  }*/
